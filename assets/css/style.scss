@@ -239,16 +239,16 @@ a {
         img {
           max-height: 80%;
           &:nth-child(1) {
-            right: 10%;
+            right: 0%;
             z-index: 999;
           }
           &:nth-child(2) {
-            right: 30%;
+            right: 20%;
             top: 30px;
             z-index: 99;
           }
           &:nth-child(3) {
-            right: 50%;
+            right: 40%;
             top: 60px;
             z-index: 9;
           }
@@ -305,6 +305,10 @@ a {
       }
       p {
         margin: 0;
+        color: $black-color;
+        @media (max-width: 576px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -582,7 +586,7 @@ a {
     width: 100%;
     padding: 30px 0;
     height: 400px;
-    background-image: linear-gradient(45deg, #e4fff2bf, #e6fff3),
+    background-image: linear-gradient(45deg, rgb(223 28 38 / 70%), #df1c26c2),
       url(../images/download-app.svg);
     background-size: contain;
     overflow: hidden;
@@ -624,7 +628,7 @@ a {
           }
         }
         h3 {
-          color: $black-color;
+          color: $white-color;
           font-weight: 600;
           font-size: 48px;
           line-height: 72px;
@@ -635,7 +639,7 @@ a {
           }
         }
         p {
-          color: $text-color;
+          color: $white-color;
         }
         .btns {
           margin-top: 16px;
