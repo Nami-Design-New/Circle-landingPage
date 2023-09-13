@@ -36,6 +36,7 @@ window.addEventListener("scroll", () => {
 });
 let toogler = document.querySelector(".toogler");
 let menu = document.querySelector(".nav-links");
+let links = document.querySelectorAll(".nav-link a");
 toogler.addEventListener("click", () => {
   menu.classList.toggle("showing");
   menu.classList.contains("showing")
@@ -43,10 +44,17 @@ toogler.addEventListener("click", () => {
         "fa-sharp fa-solid fa-bars-staggered")
     : (toogler.querySelector("i").classList = "fa-sharp fa-solid fa-bars");
 });
+links.forEach(l => {
+  l.addEventListener("click", () => {
+    menu.classList.remove("showing");
+    menu.classList.contains("showing")
+      ? (toogler.querySelector("i").classList =
+          "fa-sharp fa-solid fa-bars-staggered")
+      : (toogler.querySelector("i").classList = "fa-sharp fa-solid fa-bars");
+  });
+});
 if (navigator.geolocation) {
-  var places = [
-    { name: "Circle", coords: [30.0294387, 31.4106394] },
-  ];
+  var places = [{ name: "Circle", coords: [30.0294387, 31.4106394] }];
   navigator.geolocation.getCurrentPosition(function(position) {
     const { latitude, longitude } = position.coords;
     const coords = [latitude, longitude];
