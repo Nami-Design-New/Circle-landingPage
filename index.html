@@ -1,0 +1,476 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable= no shrink-to-fit= no">
+    <title>Circle</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/fav.svg">
+    <!-- required css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/leaflet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="header">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.svg"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-link">
+                        <a class="home active" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="how-it-works" href="#how-it-works">كيف يعمل</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="features" href="#features">المميزات</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="contact-us" href="#contact-us">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btns d-flex gap-3">
+                <a class="btn" href="https://wa.me/966565161868"> <i class="fa-solid fa-user-headset"></i></a>
+                <button class="btn toogler">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- main-wrapper -->
+    <main class="content">
+        <!-- hero section -->
+        <section id="home" class="hero-section sec">
+            <span class="clipy">
+                <img src="assets/images/thumLocation.svg" alt="">
+            </span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 content-wrap" data-aos="fade-left" data-aos-duration="500">
+                        <h1>
+                            بين يديك عالم متكامل! 🌟 تسوّق معنا في تطبيق <span>Circle</span> للعناية الشخصية، المواد
+                            الغذائية،
+                            منتجات الأطفال، ومستلزمات المنزل، وغيرها الكثير... 🛒✨ اكتشف التنوع والجودة في متناول يدك
+                            الآن!
+                        </h1>
+                        <p>
+                            حمل التطبيق الأن واستمتع بتجربة تسوق استثنائية ..!
+                        </p>
+                        <div class="btns">
+                            <a href="#!">
+                                <img src="assets/images/app-store.svg" alt="google-play">
+                            </a>
+                            <a href="#!">
+                                <img src="assets/images/google-play.svg" alt="app-store">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 img-wrap">
+                        <div class="mockup">
+                            <img src="assets/images/mouckup1.svg" alt="mockup1" data-aos="fade-right"
+                                data-aos-duration="500">
+                            <img src="assets/images/mouckup2.svg" alt="mockup2" data-aos="fade-right"
+                                data-aos-duration="500" data-aos-delay="400">
+                            <img src="assets/images/mouckup3.svg" alt="mockup3" data-aos="fade-right"
+                                data-aos-duration="500" data-aos-delay="800">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- statics -->
+        <section class="statics">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6 p-lg-3 p-2">
+                        <div class="statics-card" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/images/downloads.svg" alt="downloads">
+                            <h4><span class="num" data-goal="80">0</span>k+</h4>
+                            <p>التحميلات</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 p-lg-3 p-2">
+                        <div class="statics-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+                            <img src="assets/images/fast.svg" alt="star">
+                            <h4><span class="num" data-goal="2">0</span>h</h4>
+                            <p>توصيل سريع</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 p-lg-3 p-2">
+                        <div class="statics-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+                            <img src="assets/images/varity.svg" alt="driver">
+                            <h4><span class="num" data-goal="45">0</span>+</h4>
+                            <p>تنوع الاقسام والمنتجات</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 p-lg-3 p-2">
+                        <div class="statics-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500">
+                            <img src="assets/images/Satisfied-Customers.svg" alt="Ride Completion">
+                            <h4><span class="num" data-goal="120">0</span>k+</h4>
+                            <p>عملاء راضون</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- how it works setion -->
+        <section id="how-it-works" class="how sec">
+            <h2 class="text-center title">كيف يعمل تطبيق <span>Circle</span></h2>
+            <p class="text-center sub-title">
+                مع مئات الفئات المميزة بانتظارك، يمكنك العثور على كل ما تحتاجه تحت سقف واحد. ابدأ رحلتك التسوقية الآن
+                واستمتع بمجموعة واسعة من المنتجات بجودة عالية
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 taps-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 step" data-aos="fade-up" data-aos-duration="500">
+                                    <div class="icon">
+                                        <img src="assets/images/downloadApp.svg" alt="icon">
+                                    </div>
+                                    <h6>تنزيل وتثبيت</h6>
+                                    <p>
+                                        ابدأ بتنزيل تطبيق Circle من متجر التطبيقات الخاص بك. بعد التثبيت، افتح التطبيق
+                                        للدخول في رحلتك في عالم المنتجات الطازجة.
+                                    </p>
+                                </div>
+                                <div class="col-6 step" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                                    <div class="icon">
+                                        <img src="assets/images/login.svg" alt="icon">
+                                    </div>
+                                    <h6> التسجيل أو تسجيل الدخول </h6>
+                                    <p>
+                                        أنشئ حسابك إذا كنت مستخدمًا جديدًا، أو قم بتسجيل الدخول إذا كنت عائدًا. قم
+                                        بتخصيص ملفك الشخصي لتجربة تسوق مُحسّنة.
+                                    </p>
+                                </div>
+                                <div class="col-6 step mt-5" data-aos="fade-up" data-aos-duration="500"
+                                    data-aos-delay="400">
+                                    <div class="icon">
+                                        <img src="assets/images/addcart.svg" alt="icon">
+                                    </div>
+                                    <h6> اختيار وإضافة إلى السلة </h6>
+                                    <p>
+                                        اختر الخضروات المرغوبة بالنقر عليها. راقب سلة التسوق وهي تمتلئ بأفضل مختارات
+                                        الطبيعة أثناء استكشاف المجموعة.
+                                    </p>
+                                </div>
+                                <div class="col-6 step mt-5" data-aos="fade-up" data-aos-duration="500"
+                                    data-aos-delay="600">
+                                    <div class="icon">
+                                        <img src="assets/images/payment.svg" alt="icon">
+                                    </div>
+                                    <h6> الدفع الآمن </h6>
+                                    <p>
+                                        انتقل إلى عملية الدفع واختر طريقة الدفع المفضلة لديك. نظامنا الآمن يحمي معلوماتك
+                                        بشكل كامل.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-end imgs-wrap">
+                        <div class="circle" data-aos="fade-up" data-aos-duration="500">
+                            <img class="legend" src="assets/images/legend.svg" alt="">
+                            <img class="img1" src="assets/images/mouckup4.svg" alt="mouckup4">
+                            <img class="img2" src="assets/images/mouckup5.svg" alt="mouckup5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features section -->
+        <section class="features sec" id="features">
+            <span class="toop">
+                <img src="assets/images/square-animate.svg" alt="">
+            </span>
+            <span class="bottom">
+                <img src="assets/images/square-animate.svg" alt="">
+            </span>
+            <h2 class="text-center title">مميزات التطبيق</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <div class="feature-card" data-aos="fade-up" data-aos-duration="500">
+                            <div class="icon">
+                                <img src="assets/images/pros.svg" alt="icon">
+                            </div>
+                            <h4>بيئة تسوق متعددة الفئات</h4>
+                            <p>
+                                اكتشف مجموعة واسعة من الفئات بتطبيق Circle. سواء كنت تبحث عن منتجات العناية الشخصية،
+                                البقالة، منتجات الأطفال، أو منتجات المنزل، ستجد كل ما تحتاجه في مكان واحد. 🏡🛍️
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+                            <div class="icon">
+                                <img src="assets/images/sale.svg" alt="icon">
+                            </div>
+                            <h4>عروض وتخفيضات حصرية</h4>
+                            <p>
+                                استفد من عروض حصرية وتخفيضات مذهلة على منتجاتك المفضلة. تصفح العروض اليومية واحصل على
+                                أفضل الصفقات في التطبيق. 💰🎁
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+                            <div class="icon">
+                                <img src="assets/images/fast-deleivry.svg" alt="icon">
+                            </div>
+                            <h4> توصيل سريع ومريح </h4>
+                            <p>
+                                نحن هنا لجعل تجربتك في التسوق أسهل من أي وقت مضى. اختر المنتجات التي تحبها وسنقوم
+                                بتوصيلها إلى باب منزلك بسرعة وموثوقية. تسوق بكل راحة دون الحاجة للخروج من المنزل. 🚚🏠
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq section -->
+        <section class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        <h3>الاسئله الشائعة</h3>
+                        <div class="img">
+                            <img data-aos="fade-left" data-aos-duration="500" src="assets/images/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        كيف يضمن Circle طازجية الخضروات؟
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            في Circle، الطازجة هي أولويتنا القصوى. نقوم بتزويد خضرواتنا مباشرةً من المزارع
+                                            المحلية، مما يضمن أنها تُقطف عند ذروة طازجها. نظام التوصيل الفعّال لدينا
+                                            أيضًا يضمن وصول الخضروات إليك بسرعة بعد الحصاد، محافظًا على جودتها ونكهتها.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ما المناطق التي توصلون إليها؟
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            نحن نقدم حاليًا خدمة التوصيل إلى نجران الطائف ابها مكة. نحن نعمل
+                                            باستمرار على توسيع شبكة التوصيل لنصل بالخضراوات الطازجة إلى المزيد من
+                                            الأبواب. تحقق من تطبيقنا للحصول على أحدث تغطية لخدمة التوصيل.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        كيف يمكنني دفع ثمن طلباتي؟
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            نحن نقدم خيارات دفع متنوعة، بما في ذلك بطاقات الائتمان/الخصم وبوابات الدفع
+                                            عبر الإنترنت. ما عليك سوى اختيار طريقة الدفع المفضلة لديك أثناء الخروج،
+                                            وسيتم معالجة معلومات الدفع الخاصة بك بأمان.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        هل يمكنني تخصيص طلباتي؟
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            بالتأكيد! يتيح لك تطبيقنا اختيار الخضروات الفردية وتخصيص طلبك وفقًا
+                                            لتفضيلاتك. يمكنك أيضًا حفظ العناصر المفضلة لديك لإعادة الطلب بسرعة في
+                                            المستقبل.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        ماذا إذا لم يعجبني جودة الخضروات؟
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            رضاك يهمنا. إذا كنت غير راضٍ عن جودة الخضروات في أي وقت، يرجى التواصل مع
+                                            فريق دعم العملاء لدينا خلال [الإطار الزمني المحدد]. سنكون سعداء جدًا
+                                            بمساعدتك.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        كيف يمكنني تتبع توصيل طلبي؟
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            تتبع توصيل طلبك بسهولة. بمجرد تأكيد طلبك، ستتلقى إشعارًا يحتوي على رابط
+                                            تتبع. يمكنك متابعة تقدم طلبك في الوقت الفعلي من خلال التطبيق.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        هل معلوماتي الشخصية آمنة مع Circle؟
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            نعم، بالطبع. نحن نأخذ حماية البيانات على محمل الجد. تتم تشفير معلوماتك
+                                            الشخصية وتخزينها بشكل آمن. نستخدمها فقط لمعالجة الطلبات وتحسين تجربتك في
+                                            التسوق.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact-us section -->
+        <section class="contact-us sec" id="contact-us">
+            <img id="img" src="assets/images/fav.svg" alt="">
+            <h2 class="text-center title">فريق دعم كامل فى خدمتك لا تتردد فى الإستفسار عن اى شىء</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <form action="">
+                            <input type="text" placeholder="اسمك كاملا" name="name" id="name">
+                            <input type="email" placeholder="البريد الالكترونى" name="email" id="email">
+                            <input type="text" placeholder="الموضوع" name="subject" id="subject">
+                            <textarea name="message" id="message" placeholder="رسالتك" rows="4"></textarea>
+                            <button type="submit">ارسال</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-12 map-area" style="height: 450px;">
+                        <div class="w-100 h-100" id="mapLocation"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="download-app">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12 d-flex justify-content-center flex-column">
+                        <h3>حمّل التطبيق الآن واستمتع بالتسوق !</h3>
+                        <p> تسوق مستلزماتك اليومية بكل سهولة وسرعة مع تطبيقنا الرائع </p>
+                        <div class="btns">
+                            <a href="#!">
+                                <img src="assets/images/app-store.svg" alt="google-play">
+                            </a>
+                            <a href="#!">
+                                <img src="assets/images/google-play.svg" alt="app-store">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 app-imgs">
+                        <div class="img">
+                            <img src="assets/images/mouckup1.svg" alt="app">
+                            <img src="assets/images/mouckup2.svg" alt="app">
+                            <img src="assets/images/mouckup3.svg" alt="app">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 flex-lg-row flex-column  d-flex justify-content-between align-items-center footer">
+                    <a class="logo" href="index.html">
+                        <img src="assets/images/fav.svg" alt="logo">
+                    </a>
+                    <div class="copy">
+                        <p>.Copyright © 2023 <span>Circle</span>. All rights reserved</p>
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="#!">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/leaflet.js"></script>
+<script src="assets/js/app.js"></script>
+
+</html>
